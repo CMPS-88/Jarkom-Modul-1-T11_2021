@@ -78,6 +78,18 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 2. Sesudah melakukan follow tcp password tersebut akan terlihat jika data tersebut show data as ASCII dan stream diubah menjadi 11 <br> <img src="/ss/19.png">
 3. Setelah sudah mendapatkan password tersebut, file yang terkunci bisa dibuka dengan password yang didapatkan dan isi dari file tersebut adalah sebagai berikut <br> <img src="/ss/20.png">
 
+## Soal 11
+Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
+
+### Jawaban
+1.  Untuk melakukan filter yang berasal dari port 80 kami menggunakan command ```tcp.srcport == 80``` maka akan otomastis menampilkan paket paket data. Seperti gambar berikut <br> ![Screenshot (2733)](https://user-images.githubusercontent.com/71550384/134761255-bd9f0197-c461-4558-b014-6049a4b4e3b0.png)
+
+## Soal 12
+Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+### Jawaban 
+1. Untuk melakukan filter paket yang mengandung port 21 kami menggunakan command ```tcp.port == 21``` maka akan otomatis menampilkan paket-paket data. Seperti pada gambar berikut <br> ![Screenshot (2737)](https://user-images.githubusercontent.com/71550384/134761625-50322670-750a-43c5-92a3-ee40174edb88.png)
+
 ## Kendala
 Kendala kami dalam mengerjakan praktikum ini adalah :
 1. Ada beberapa filter yang belum kami ketahui, sehingga harus mencoba-coba dahulu
