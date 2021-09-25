@@ -82,13 +82,32 @@ Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server te
 Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
 
 ### Jawaban
-1.  Untuk melakukan filter yang berasal dari port 80 kami menggunakan command ```tcp.srcport == 80``` maka akan otomastis menampilkan paket paket data. Seperti gambar berikut <br> ![Screenshot (2733)](https://user-images.githubusercontent.com/71550384/134761255-bd9f0197-c461-4558-b014-6049a4b4e3b0.png)
+1.  Untuk melakukan filter yang berasal dari port 80 kami menggunakan command ```tcp.srcport == 80``` maka akan otomastis menampilkan paket paket data. Seperti gambar berikut : <br> ![Screenshot (2733)](https://user-images.githubusercontent.com/71550384/134761255-bd9f0197-c461-4558-b014-6049a4b4e3b0.png)
 
 ## Soal 12
 Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 ### Jawaban 
-1. Untuk melakukan filter paket yang mengandung port 21 kami menggunakan command ```tcp.port == 21``` maka akan otomatis menampilkan paket-paket data. Seperti pada gambar berikut <br> ![Screenshot (2737)](https://user-images.githubusercontent.com/71550384/134761625-50322670-750a-43c5-92a3-ee40174edb88.png)
+1. Untuk melakukan filter paket yang mengandung port 21 kami menggunakan command ```tcp.port == 21``` maka akan otomatis menampilkan paket-paket data. Seperti pada gambar berikut : <br> ![Screenshot (2737)](https://user-images.githubusercontent.com/71550384/134761625-50322670-750a-43c5-92a3-ee40174edb88.png)
+
+## Soal 13
+Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+
+### Jawaban
+1. Untuk melakukan filter paket data yang menuju port 443 kami menggunakan command ```tcp.dstport == 443``` maka akan otomatis menampilkan paket-paket data tersebut. Seperti gambar berikut : <br> ![Screenshot (2734)](https://user-images.githubusercontent.com/71550384/134762143-13c9e42c-ea57-4462-bcae-71e84e8815d0.png)
+
+## Soal 14
+Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+
+### Jawaban 
+1. Untuk mengambil paket yang menuju alamat tersebut kami menggunakan command ```http.host==kemenag.go.id``` maka akan otomatis menampilkan paket-paket data tersebut. Seperti gambar berikut : <br> ![Screenshot (2735)](https://user-images.githubusercontent.com/71550384/134762234-48398d8c-8369-42b0-b992-037436dcac04.png)
+
+## Soal 15
+Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+
+### Jawaban
+1. Untuk mengambil paket yang berasal dari alamat ip kami menggunakan command ```ip.src_host eq 192.168.100.7``` maka akan otomatis menampilkan paket-paket data tersebut. Seperti gamabr berikut : <br> ![Screenshot (2736)](https://user-images.githubusercontent.com/71550384/134762336-1817951c-786e-4532-aed6-eb4883d84b2a.png)
+
 
 ## Kendala
 Kendala kami dalam mengerjakan praktikum ini adalah :
