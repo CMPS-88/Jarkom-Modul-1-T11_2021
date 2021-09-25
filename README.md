@@ -37,6 +37,10 @@ Temukan paket mysql yang mengandung perintah query select!
 ## Soal 5
 Login ke ```portal.ichimarumaru.tech``` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
+### Jawaban
+1. Untuk mendapatkan packet dengan perintah query insert kami menggunakan filter ```mysql.query matches "insert"``` dan didapatkan hasil sebagai berikut <br> <img src="/ss/8.JPG">
+2. kami mendapatkan username:```"akakanomi"``` pass:```"pemisah4lautan"```
+3. Setelah berhasil login kami menyebutkan konfigurasi kabel T568B <br> <img src="/ss/9.JPG">
 
 
 
