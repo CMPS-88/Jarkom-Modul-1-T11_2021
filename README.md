@@ -42,7 +42,41 @@ Login ke ```portal.ichimarumaru.tech``` kemudian ikuti perintahnya! Username dan
 2. kami mendapatkan username:```"akakanomi"``` pass:```"pemisah4lautan"```
 3. Setelah berhasil login kami menyebutkan konfigurasi kabel T568B <br> <img src="/ss/9.JPG">
 
+## Soal 6
+Cari username dan password ketika melakukan login ke FTP Server!
 
+### Jawaban
+1. Untuk menemuka username dan password yang login pada FTP Server tersebut kami menggunakan filter ```ftp.request.command eq "USER" or ftp.request.command eq "PASS"``` dan didapatkan Username adalah secretuser dan passwordnya adalah aku.pengen.pw.aja seperti berikut
+
+## Soal 7
+Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+
+### Jawaban
+1. Pertama kami mencari file yang berisi "Real.pdf" dengan menggunakan filter ```frame contains "Real.pdf"``` dan ketika sudah mendapatkan hasilnya langsung melakukan follow tcp
+2. Selanjutnya setelah di follow tcp, show data tersebut diubah menjadi show data as raw dan file nya di save dengan nama 201.zip sebagai gambar berikut
+3. Setelah itu file nya dibuka dan mendapatkan hasil seperti gambar berikut
+
+## Soal 8
+Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+
+### Jawaban
+1. Untuk mencari pengambilan file tersebut kami menggunakan command ```ftp.request.command == STOR``` seperti berikut
+
+### Soal 9
+Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
+
+### Jawaban
+1. Pertama kami mencari file yang bernama "secret.zip' dengan menggunakan command ```frame contains "secret.zip"``` seperti gambar berikut
+2. Setelah kami mendapatkan info yang ingin di cari selanjutanya kami melakukan follow tcp dan mengubah show data menjadi raw dan stream diubah menjadi 10
+3. Selanjutnya file nya kami simpan.
+
+## Soal 10
+Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+
+### Jawaban
+1. Pertama kami menggunakan command ```frame contains "secret.zip"``` dan melakukan follow tcp kepada info yang memiliki ```STOR = "history.txt"``` seperti berikut
+2. Sesudah melakukan follow tcp password tersebut akan terlihat jika data tersebut show data as ASCII dan stream diubah menjadi 11
+3. Setelah sudah mendapatkan password tersebut, file yang terkunci bisa dibuka dengan password yang didapatkan dan isi dari file tersebut adalah sebagai berikut
 
 ## Kendala
 Kendala kami dalam mengerjakan praktikum ini adalah :
