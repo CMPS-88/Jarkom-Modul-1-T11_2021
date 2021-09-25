@@ -1,4 +1,4 @@
-# Jarkom-Modul1-T11-2021
+# Jarkom-Modul-1-T11-2021
 
 Nama Anggota | NRP
 ------------------- | --------------		
