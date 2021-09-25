@@ -27,3 +27,20 @@ Ikuti perintah di ```basic.ichimarumaru.tech!``` Username dan password bisa dida
 1. Pertama kami menggunakan filter ```http.host eq "basic.ichimarumaru.tech"``` untuk mendapatkan packet yang mengandung website ```basic.ichimarumaru.tech```
 2. Kemudian kami melihat pada bagian Hypertext Transfer Protocol, bagian Authorization dan mendapatkan hasil ```kuncimenujulautan:tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN```
 3. Setelah itu kami berhasil login dan memasukkan urutan kabel T568A
+
+## Soal 4
+Temukan paket mysql yang mengandung perintah query select!
+
+### Jawaban
+1. Untuk menemukan packet yang mengandung perintah query select kami menggunakan filter ```mysql.query matches "select"``` dan didapatkan hasil sebagai berikut
+
+## Soal 5
+Login ke ```portal.ichimarumaru.tech``` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+
+
+
+
+## Kendala
+Kendala kami dalam mengerjakan praktikum ini adalah :
+1. Ada beberapa filter yang belum kami ketahui, sehingga harus mencoba-coba dahulu
+2. Ketika menggunakan follow tcp stream ada beberapa setting yang belum kami ketahui, sehingga awalnya kami agak tersendat di soal-soal yang perlu follow tcp stream
